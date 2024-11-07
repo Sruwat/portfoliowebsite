@@ -1,0 +1,158 @@
+/* Reset and General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    font-size: 16px;
+}
+
+header {
+    background-color: #2a2a3c;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 15px;
+}
+
+.brand-name {
+    font-size: 2.4rem;
+    color: #00b0ff;
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00b0ff;
+}
+
+#projects, #certifications {
+    padding: 20px;
+    text-align: center;
+    background-color: #121212;
+    color: #fff;
+}
+
+#projects h2, #certifications h2 {
+    font-size: 2rem;
+    color: #00b0ff;
+}
+
+.project-grid, .certification-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card, .certification-card {
+    background-color: #2a2a3c;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-card img, .certification-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-card:hover, .certification-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3, .certification-card h4 {
+    color: #00b0ff;
+    margin-top: 10px;
+}
+
+.project-card p, .certification-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00b0ff;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005f9c;
+}
+
+footer {
+    background-color: #2a2a3c;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-icons-row a {
+    color: white;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.social-icons-row a:hover {
+    color: #00b0ff;
+}
+
+.back-to-top {
+    margin-top: 20px;
+}
+
+.back-to-top a {
+    color: #00b0ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
