@@ -34,25 +34,25 @@ header {
 }
 
 .logo img {
-    height: 70px;
+    height: 50px;
     margin-right: 15px;
 }
 
 .brand-name {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     color: #00b0ff;
     font-family: 'Lucida Handwriting', cursive;
 }
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
@@ -60,6 +60,7 @@ header {
     color: #00b0ff;
 }
 
+/* Projects and Certifications Sections */
 #projects, #certifications {
     padding: 20px;
     text-align: center;
@@ -119,6 +120,7 @@ header {
     background-color: #005f9c;
 }
 
+/* Footer */
 footer {
     background-color: #2a2a3c;
     color: white;
@@ -156,3 +158,47 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
+/* Responsive Styling with Media Queries */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .brand-name {
+        font-size: 1.5rem;
+    }
+
+    .project-grid, .certification-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 40px;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+    }
+
+    #projects h2, #certifications h2 {
+        font-size: 1.5rem;
+    }
+}
+
